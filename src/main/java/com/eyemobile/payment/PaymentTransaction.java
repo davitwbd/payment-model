@@ -7,7 +7,7 @@ import com.eyemobile.common.PaymentProviderType;
 import java.math.BigDecimal;
 
 /**
- * Created by Tiago Felipe on 25/05/2018.
+ * Created by Tiago Felipe on 28/05/2018.
  */
 
 public class PaymentTransaction {
