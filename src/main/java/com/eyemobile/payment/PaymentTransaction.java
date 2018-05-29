@@ -26,7 +26,7 @@ import java.util.List;
 public class PaymentTransaction {
     private String id;
     private String paymentReference;
-    private PaymentProviderType provider;
+    private int provider;
     private String cardNumber;
     private String cardHolderName;
     private CardBrand cardBrand;
@@ -52,11 +52,11 @@ public class PaymentTransaction {
         this.paymentReference = paymentReference;
     }
 
-    public PaymentProviderType getProvider() {
+    public int getProvider() {
         return provider;
     }
 
-    public void setProvider(PaymentProviderType provider) {
+    public void setProvider(int provider) {
         this.provider = provider;
     }
 
