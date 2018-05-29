@@ -5,6 +5,7 @@ import com.eyemobile.common.CardMode;
 import com.eyemobile.common.PaymentProviderType;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * Created by Tiago Felipe on 28/05/2018.
@@ -21,6 +22,7 @@ public class PaymentTransaction {
     private BigDecimal total;
     private String metadata;
     private String time;
+    private List<Split> splits;
 
     public String getId() {
         return id;
@@ -100,5 +102,13 @@ public class PaymentTransaction {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public List<Split> getSplits() {
+        return splits;
+    }
+
+    public void setSplits(List<Split> splits) {
+        this.splits = splits;
     }
 }
