@@ -12,14 +12,14 @@ import java.math.BigDecimal;
  *
  *  Attribute description:<br>
  *  <strong>recipientId</strong> It's the unique recipient reference in PaymentProvider.<br>
- *  <strong>amount</strong> It's a partial value of the transaction<br>
+ *  <strong>amount</strong> It's a partial value of the transaction. Values in cents.<br>
  *  <strong>chargeProcessingFee</strong> It indicates who pays the fee for PaymentProvider.<br>
  *  <strong>liable</strong> It indicates who assumes the chargeback.<br>
  */
 public class Split {
 
     private String recipientId;
-    private BigDecimal amount;
+    private Integer amount;
     private boolean chargeProcessingFee;
     private boolean liable;
 
@@ -31,11 +31,11 @@ public class Split {
         this.recipientId = recipientId;
     }
 
-    public BigDecimal getAmount() {
+    public Integer getAmount() {
         return amount;
     }
 
-    public void setAmount(BigDecimal amount) {
+    public void setAmount(Integer amount) {
         this.amount = amount;
     }
 
