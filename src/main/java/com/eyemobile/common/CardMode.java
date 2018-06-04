@@ -23,4 +23,26 @@ public enum CardMode {
                 return CREDIT;
         }
     }
+
+    public static int getValue(String name){
+        switch (name.toUpperCase()) {
+            case "DEBIT":
+                return DEBIT.getValue();
+            case "CREDIT":
+                return CREDIT.getValue();
+            default:
+                return CREDIT.getValue();
+        }
+    }
+
+    public static String getName(int id){
+        switch (id) {
+            case 0:
+                return DEBIT.toString();
+            case 1:
+                return CREDIT.toString();
+            default:
+                return CREDIT.toString();
+        }
+    }
 }
