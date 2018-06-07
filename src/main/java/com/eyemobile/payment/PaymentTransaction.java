@@ -33,6 +33,7 @@ public class PaymentTransaction {
     private Integer total;
     private List<Split> splits;
     private String time;
+    private boolean success;
     private String metadata;
 
     public String getId() {
@@ -113,6 +114,14 @@ public class PaymentTransaction {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
     }
 
     public String getMetadata() {
